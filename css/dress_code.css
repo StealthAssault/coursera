@@ -1,0 +1,36 @@
+body{
+  font-family:Verdana;
+}
+h1.heading{
+  font-size:1.75rem;
+}  
+.section{
+  background:#aaa;
+  border:2px solid black; 
+}
+.section.title{
+  font-size:1.25rem;
+}  
+.section.title:first-child{
+  background:#D59898;
+  border:2px solid black;  
+}  
+
+@media only screen and (min-width:992px){
+  .section{
+    width:33vw;
+  }
+}
+@media only screen and (min-width:768px) and (max-width:991px){
+  .section{
+    width:50vw;
+  }
+  .section:last-child{
+    width:100vw !important;
+  }
+}
+@media only screen and (max-width:767px){
+  .section{
+    width:100vw;
+  }
+}
